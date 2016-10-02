@@ -1,0 +1,88 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+body {
+    margin: 0;
+    padding: 0;
+    color: #4e443c;
+    background: #f0efe7;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4e443c;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-list {
+    position: relative;
+    width: 10000px;
+    padding: 0;
+}
+
+.carousel-element {
+    display: block;
+    float: left;
+    margin-right: 25px;
+}
+
+.carousel-element img {
+    max-width: 600px;
+}
+
+.carousel-hider {
+    float: left;
+    overflow: hidden;
+    width: 600px;
+    text-align: center;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    display: block;
+    float: left;
+    margin-top: 170px;
+    padding: 5px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.myphoto {
+    width: 140px;
+}

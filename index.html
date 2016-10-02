@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://use.fontawesome.com/9f3fe5293f.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carousel Plugin &amp; Template</title>
+</head>
+
+<body>
+    <h1>Carousel</h1>
+    <div class="wrapper">
+        <div class="carousel-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/img_01.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_02.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_03.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_04.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_05.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_06.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_07.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_08.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_09.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_10.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+                <li class="carousel-element"><img src="img/img_11.jpg" alt="">
+                    <p>Описание</p>
+                </li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    </div>
+    <script type="text/html" id="tmpl">
+        <div class="wrapper">
+            <h1><%= title %></h1>
+            <img src="<%= link[0] %>" alt="<%= imgTitle %>" title="<%= imgTitle %>" class="myphoto">
+            <% for (var i = 0; i < 2; i++) { %>
+                <p>
+                    <%= text[i] %>
+                </p>
+                <% } %>
+                    <ul>
+                        <% for (var i = 2; i < 5; i++) { %>
+                            <li>
+                                <%= text[i] %>
+                            </li>
+                            <% } %>
+                    </ul>
+                    <p>
+                        <%= text[5] %>
+                            <br>
+                            <strong><%= text[6] %></strong></p>
+                    <p>
+                        <%= text[7] %>
+                            <br>
+                            <p>
+                                <%= text[8] %>
+                                    <br>
+                                    <% for (var i = 9, j = 1; i < 11; i++) { %>
+                                        <a href="<%= link[j] %>">
+                                            <%= text[i] %>
+                                        </a>
+                                        <br>
+                                        <% j++; } %>
+                            </p>
+                            <p>
+                                <%= text[11] %>
+                            </p>
+        </div>
+    </script>
+</body>
+
+</html>
